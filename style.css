@@ -19,7 +19,7 @@ body {
 .main {
     background-image: url(assests/images/bg.jpg);
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 92vh;
     position: relative;
@@ -190,8 +190,8 @@ nav {
 }
 
 .section img{
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .feedback{
@@ -207,6 +207,7 @@ nav {
     font-weight: 900;
     font-size: 48px;
     margin: 20px 0px;
+    text-align: center;
 }
  .feedback .ques{
   width: 80vw;
@@ -226,11 +227,15 @@ nav {
     font-weight: 400;
     font-weight: 400;
     margin-top: 5vh;
+    text-align: center;
+
 }
 .flex{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px 0px 90px 0px;
+    gap: 1vh;
 }
 .footer{
     margin-top: 15vh;
@@ -270,4 +275,50 @@ nav {
     margin-left: 7vw;
     margin-top: 3vh;
 
+}
+@media (max-width: 800px) {
+    .main {
+        background-position: top center;
+        background-size: cover;
+        width: 100%;
+        height: 52vh;
+        position: relative;
+        background-repeat: initial;
+    }
+    .section {
+        flex-direction: column;
+        padding: 20px;
+        max-height: 50vh;
+    }
+    .section h2,
+    .section p {
+        order: 1; /* Ensure text is always on top */
+    }
+    .section img {
+        order: 2; /* Ensure image is always below the text */
+        width: 50vw;
+    }
+    .section h2{
+        font-size: 24px;
+        font-weight: 900;
+        max-width: 40vw;
+    }
+    .section p{
+        font-size: 12px;
+        font-weight: 400;
+        max-width: 36vw;
+        margin-top: 12.5px;
+    }
+    .form, .flex{
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 32px;
+    }
+    .hero p{
+        font-size: 24px;
+    }
+    .hero h3{
+        font-size: 20px;
+    }
 }
