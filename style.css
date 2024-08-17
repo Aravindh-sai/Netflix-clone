@@ -190,8 +190,8 @@ nav {
 }
 
 .section img{
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .feedback{
@@ -285,14 +285,20 @@ nav {
         position: relative;
         background-repeat: initial;
     }
+    .box{
+        height: 52vh;
+    }
     .section {
         flex-direction: column;
-        padding: 20px;
+        padding: 25px;
         max-height: 50vh;
+        max-width: 100%;
     }
-    .section h2,
-    .section p {
-        order: 1; /* Ensure text is always on top */
+    .section .info{
+        order: 1;
+    }
+    .section .display{
+        order: 2;
     }
     .section img {
         order: 2; /* Ensure image is always below the text */
@@ -302,23 +308,29 @@ nav {
         font-size: 24px;
         font-weight: 900;
         max-width: 40vw;
+        text-align: center;
+
     }
     .section p{
         font-size: 12px;
         font-weight: 400;
         max-width: 36vw;
         margin-top: 12.5px;
+        text-align: center;
     }
     .form, .flex{
         flex-direction: column;
     }
     .hero h1{
         font-size: 32px;
+        text-align: center;
     }
     .hero p{
         font-size: 24px;
+        text-align: center;
     }
     .hero h3{
         font-size: 20px;
+        text-align: center;
     }
 }
