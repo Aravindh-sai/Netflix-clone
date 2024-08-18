@@ -364,7 +364,41 @@ nav {
         column-gap: 8px;
     }
 }
-
+@media (max-height: 980px) {
+   
+    .hero{
+        max-height: 70vh;
+        gap: 3vh;
+        padding: 20px;
+        box-sizing:content-box;
+    }
+    .hero h1 {
+        font-size: 20px; /* Further reduce font size */
+    }
+    .hero p {
+        font-size: 15px; /* Further reduce font size */
+    }
+    .hero h3 {
+        font-size: 12px; /* Further reduce font size */
+    }
+    .section{
+        max-height: 70vh;
+    }
+    .section h2 {
+        font-size: 18px; /* Further adjust section title size */
+    }
+    .section p {
+        font-size: 14px; /* Further adjust section paragraph size */
+    }
+    .start{
+        padding: 5px;
+        font-size: medium;
+    }
+    .inp{
+        height:6vh;
+        font-size: small;
+    }
+}
 
 
 
