@@ -27,12 +27,12 @@ body {
 }   
 
 nav {
+    padding-top: 50px;
     max-width: 80vw;
     justify-content: space-between;
-    margin: auto;
+    margin:  auto;
     display: flex;
     align-items: center;
-    height: 100px;
 
 }
 
@@ -345,7 +345,6 @@ nav {
         height: 40%;
     }
     .feedback h2{
-        /* width: 50vw; */
         font-size: 32px;
         font-weight: 700;
         padding: 15px;
@@ -364,4 +363,31 @@ nav {
         column-gap: 8px;
     }
 }
+/* Media query for viewports with height less than 880px */
+@media (min-height: 880px) {
+    .main{
+        max-height: 52vh;
+    }
+    .box{
+        max-height: 52vh;
+    }
+  .hero{
+    max-height: 52vh;
+  }
+  .section{
+    max-height: 50vh;
+  }
+  .hero h1{
+    font-size: 28px;
+  }
+  .hero p{
+    font-size: 20px;
+    text-align: center;
+}
+.hero h3{
+    font-size: 18px;
+    text-align: center;
+}
+}
+
 
