@@ -364,41 +364,4 @@ nav {
         column-gap: 8px;
     }
 }
-@media (max-height: 980px) {
-    /* .box{
-        max-height: 70vh;
-    } */
-    .hero{
-        max-height: 70vh;
-        gap: 1.5vh;
-        padding: 20px;
-        box-sizing:content-box;
-    }
-    .hero h1 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-    .hero p {
-        font-size: 19px;
-    }
-    .hero h3 {
-        font-size: 15px;
-    }
-    .section{
-        max-height: 70vh;
-    }
-    .section h2 {
-        font-size: 28px;
-    }
-    .section p {
-        font-size: 15px;
-    }
-    .start{
-        padding: 5px;
-        font-size: medium;
-    }
-    .inp{
-        height:6vh;
-        font-size: small;
-    }
-}
+
